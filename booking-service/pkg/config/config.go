@@ -16,13 +16,13 @@ var (
 )
 
 type DBCfg struct {
-	MongoURI string `envconfig:"MONGODB_URI" default:"mongodb://localhost:27017/"`
+	MongoURI string `envconfig:"MONGODB_URI" default:"mongodb://localhost:27017/house_keeper_seeking"`
 }
 
 type ServerCfg struct {
-	Port          int    `envconfig:"PORT" default:"3002"`
-	PricingSvcUrl string `envconfig:"PRICING_SERVICE_URL" default:"localhost:3000"`
-	SendingSvcUrl string `envconfig:"SENDING_SERVICE_URL" default:"localhost:3002"`
+	Port          int    `envconfig:"PORT" default:"3000"`
+	PricingSvcUrl string `envconfig:"PRICING_SERVICE_URL" default:"http://localhost:3001"`
+	SendingSvcUrl string `envconfig:"SENDING_SERVICE_URL" default:"http://localhost:3002"`
 }
 
 func InitConfig(configFile string) {

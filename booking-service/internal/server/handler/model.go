@@ -7,7 +7,7 @@ type BookingHouseKeeperClientInfo struct {
 }
 
 type BookingHouseKeeperRequestBody struct {
-	ClientInfo  BookingHouseKeeperClientInfo `json:"client"`
+	ClientInfo  BookingHouseKeeperClientInfo `json:"client_info"`
 	BookingDate string                       `json:"booking_date"`
 }
 

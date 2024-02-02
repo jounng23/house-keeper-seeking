@@ -16,11 +16,11 @@ var (
 )
 
 type DBCfg struct {
-	MongoURI string `envconfig:"MONGODB_URI" default:"mongodb://localhost:27017/"`
+	MongoURI string `envconfig:"MONGODB_URI" default:"mongodb://localhost:27017/house_keeper_seeking"`
 }
 
 type ServerCfg struct {
-	Port int `envconfig:"PORT" default:"8000"`
+	Port int `envconfig:"PORT" default:"3002"`
 }
 
 func InitConfig(configFile string) {
