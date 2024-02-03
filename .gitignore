@@ -1,5 +1,7 @@
 data
 
+.vscode
+
 vendor
 
 .env
